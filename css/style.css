@@ -1,0 +1,400 @@
+html {
+  height: 5000px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.d-flex1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rotate {
+  transform: rotate(230deg);
+}
+
+.rotate1 {
+  transform: rotate(90deg);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.p {
+  color: #bfbdbd;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.p1 {
+  font-size: 20px;
+  color: #64555A;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.img-fulid {
+  width: 100%;
+  height: auto;
+}
+
+.section1-text {
+  text-align: center;
+}
+.section1-text p {
+  background: rgb(17, 173, 175);
+  background: linear-gradient(99deg, rgb(17, 173, 175) 38%, rgb(123, 104, 178) 48%, rgb(217, 42, 181) 57%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.section1-text h2 {
+  font-size: 50px;
+  padding: 10px 0;
+}
+.section1-text span {
+  font-size: 20px;
+  color: #64555A;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 0, 1, 0.831372549);
+}
+
+.overlay1 {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  transition: 0.4s ease-in;
+}
+.overlay1:hover {
+  background: rgb(17, 132, 175);
+  background: linear-gradient(180deg, rgba(17, 132, 175, 0) 0%, rgb(247, 71, 102) 95%);
+}
+
+#header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  padding-top: 40px;
+}
+#header .logo {
+  max-width: 150px;
+}
+#header .logo img {
+  width: 100%;
+}
+#header .box-right ul li {
+  padding: 13px;
+  font-size: 20px;
+}
+#header .box-right ul li:last-child a {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+#header .box-right ul li:last-child a:hover {
+  background-color: red;
+  color: #fff;
+}
+#header .box-right ul li a {
+  color: #fff;
+  transition: 0.5s;
+}
+#header .box-right ul li a:hover {
+  color: red;
+}
+
+#desting {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/arxa-fon.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#desting .container h1 {
+  padding: 150px 0 0 0;
+  font-size: 110px;
+  line-height: 103px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(17, 132, 175);
+  background: linear-gradient(99deg, rgb(17, 132, 175) 32%, rgb(123, 104, 178) 48%, rgb(217, 42, 181) 62%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  z-index: 5;
+  position: relative;
+}
+#desting .container .boxes {
+  position: absolute;
+  bottom: 20px;
+  z-index: 6;
+}
+#desting .container .boxes .box {
+  width: 31%;
+  text-align: center;
+  margin: 0 10px;
+  padding-bottom: 30px;
+}
+#desting .container .boxes .box i {
+  font-size: 50px;
+  color: #FD4766;
+}
+#desting .container .boxes .box h4 {
+  font-size: 25px;
+  padding: 15px 0;
+  color: #fff;
+}
+#desting .container .boxes .box p {
+  font-size: 20px;
+}
+
+#section1 {
+  width: 100%;
+  height: 90vh;
+  margin-top: 200px;
+}
+#section1 .container .d-flex .img-fulid1 {
+  width: 37%;
+  height: 80vh;
+}
+#section1 .container .d-flex .img-fulid1 img {
+  width: 100%;
+  height: 100%;
+}
+#section1 .container .d-flex .section-text {
+  width: 63%;
+  padding: 0 30px 0 50px;
+}
+#section1 .container .d-flex .section-text i {
+  font-size: 40px;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #FD4766;
+  text-align: center;
+}
+#section1 .container .d-flex .section-text h3 {
+  font-size: 45px;
+  padding: 15px 0;
+}
+#section1 .container .d-flex .section-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px;
+}
+#section1 .container .d-flex .section-text a {
+  background: rgb(17, 132, 175);
+  background: linear-gradient(99deg, rgb(17, 132, 175) 32%, rgb(123, 104, 178) 48%, rgb(217, 42, 181) 62%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+#section1 .container .d-flex .section-text a:hover hr {
+  width: 140px;
+}
+#section1 .container .d-flex .section-text hr {
+  width: 7%;
+  padding: 1.5px;
+  border: none;
+  background: rgb(17, 173, 175);
+  background: linear-gradient(99deg, rgb(17, 173, 175) 0%, rgb(217, 42, 181) 100%);
+  transition: 0.6s;
+  margin: 6px 0;
+}
+#section1 .container .d-flex .section-text hr:hover {
+  width: 10%;
+}
+
+#section2 {
+  width: 100%;
+  height: auto;
+  background-color: #F9F9F9;
+  padding: 100px;
+}
+#section2 .boxes {
+  margin-top: 50px;
+}
+#section2 .boxes .box {
+  width: 31%;
+  padding: 50px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px 10px;
+  transition: 0.5s;
+}
+#section2 .boxes .box:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#section2 .boxes .box h4 {
+  font-size: 20px;
+  padding: 15px 0;
+}
+#section2 .boxes .box i {
+  font-size: 50px;
+  color: #FD4766;
+}
+
+#section3 {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+#section3 .boxes {
+  margin-top: 100px;
+}
+#section3 .boxes .box {
+  position: relative;
+  width: 30%;
+  height: auto;
+  margin: 30px 20px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
+  border-radius: 8px;
+}
+#section3 .boxes .box img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+#section3 .boxes .box:hover {
+  transform: scale(1.1);
+}
+#section3 .boxes .box:hover .overlay1 {
+  opacity: 1;
+}
+#section3 .boxes .box:hover img {
+  transform: scale(1);
+}
+#section3 .boxes .box .img-text {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
+  padding: 0 10px 10px 10px;
+}
+#section3 .boxes .box .img-text h4 {
+  font-size: 35px;
+  color: #fff;
+  padding: 20px 0;
+}
+#section3 .boxes .box .img-text a {
+  padding: 5px 15px;
+  border: 2px solid #bfbdbd;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.5s;
+}
+#section3 .boxes .box .img-text a:hover {
+  background-color: #FD4766;
+}
+
+#section4 {
+  width: 100%;
+  height: auto;
+  background-color: #F9F9F9;
+}
+#section4 .boxes .box {
+  width: 22%;
+  color: black;
+  background-color: #fff;
+  padding: 70px 50px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 15px;
+}
+#section4 .boxes .box i {
+  color: #FD4766;
+  font-size: 40px;
+}
+#section4 .boxes .box h2 {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+#section5 {
+  width: 100%;
+  height: 100vh;
+}
+#section5 .boxes {
+  margin-top: 200px;
+}
+#section5 .boxes .box {
+  width: 50%;
+  height: auto;
+  position: relative;
+  margin-bottom: -30px;
+}
+#section5 .boxes .box p {
+  font-size: 35px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 30px;
+  line-height: 50px;
+}
+#section5 .boxes .box span b {
+  color: #FD4766;
+}
+#section5 .boxes ul {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#section5 .boxes ul li {
+  width: 33.333%;
+  padding: 15px;
+  justify-content: center;
+}
+#section5 .boxes ul li img {
+  border-radius: 8px;
+}
+
+.overlay2 {
+  position: absolute;
+  width: 170px;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */

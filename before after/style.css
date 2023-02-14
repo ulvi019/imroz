@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 80%;
+  margin: 30px auto;
+  height: 70vh;
+  border: 3px dashed red;
+  position: relative;
+}
+.box .btn1 {
+  padding: 15px 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box .btn1:hover::before {
+  width: 100%;
+  left: 0;
+}
+.box .btn1::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  top: -10px;
+  right: 0;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.5s;
+}
+.box .btn1::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  top: -10px;
+  right: 0;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.5s;
+}
+.box .btn2 {
+  padding: 15px 20px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+}
+.box .btn2:hover::before {
+  top: -50px;
+  transform: rotate(-190deg);
+}
+.box .btn2::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background-color: red;
+}
+.box .btn2::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transition: 1s;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

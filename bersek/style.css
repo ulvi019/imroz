@@ -88,4 +88,45 @@
   background-color: red;
   animation: asadzade 3s infinite;
   position: absolute;
+}
+
+.box3 {
+  position: relative;
+  top: 100px;
+  left: 150px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+.box3:hover::before {
+  width: 50%;
+}
+.box3:hover::after {
+  width: 50%;
+}
+.box3 h5 {
+  z-index: 999;
+}
+.box3::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: red;
+  transition: 0.5s;
+}
+.box3::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: red;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

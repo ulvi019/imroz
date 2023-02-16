@@ -134,7 +134,6 @@
         background-color: blue;
       }
 }
-
 .box1{
     width: 50px;
     height: 50px;
@@ -150,4 +149,59 @@
     background-color: red;
     animation: asadzade 3s infinite;
     position: absolute;
+}
+
+// @keyframes ulvi019{
+//  0%{
+//     top: 0;
+//     left: 0;
+//     transform: rotateY(160deg);
+//  }
+// }
+
+
+.box3{
+  position: relative;
+  top: 100px;
+  left: 150px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+
+  &:hover{
+    &::before{
+      width: 50%;
+    }
+    &::after{
+      width: 50%;
+    }
+
+  }
+  h5{
+    z-index: 999;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+    transition: 0.5s;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: red;
+    transition: 0.5s;
+  }
 }

@@ -58,6 +58,7 @@ a {
 .p1 {
   font-size: 20px;
   color: #64555A;
+  opacity: 7;
 }
 
 .w-50 {
@@ -202,7 +203,7 @@ a {
   background: linear-gradient(99deg, rgb(17, 132, 175) 32%, rgb(123, 104, 178) 48%, rgb(217, 42, 181) 62%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  z-index: 5;
+  z-index: 6;
   position: relative;
 }
 #desting .container .boxes {
@@ -211,9 +212,9 @@ a {
   z-index: 6;
 }
 #desting .container .boxes .box {
-  width: 31%;
+  width: 30%;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 20px;
   padding-bottom: 30px;
 }
 #desting .container .boxes .box i {
@@ -234,6 +235,13 @@ a {
   height: 90vh;
   margin-top: 200px;
   position: relative;
+}
+@keyframes ulvi019 {
+  0% {
+    top: 0;
+    left: 0;
+    transform: rotateY(360deg);
+  }
 }
 #section1 .icon-up {
   position: fixed;
@@ -266,6 +274,8 @@ a {
   border-radius: 50%;
   background-color: #FD4766;
   text-align: center;
+  animation: ulvi019 2.5s infinite;
+  position: relative;
 }
 #section1 .container .d-flex .section-text h3 {
   font-size: 45px;
@@ -581,6 +591,46 @@ footer {
   height: auto;
   background-color: black;
   color: #fff;
+  position: relative;
+}
+@keyframes u019 {
+  0% {
+    transform: rotate(30deg);
+    top: 50%;
+    right: 10%;
+  }
+  25% {
+    transform: rotate(90deg);
+    top: 60%;
+    right: 5%;
+  }
+  50% {
+    transform: rotate(180deg);
+    top: 70%;
+    right: 10%;
+  }
+  75% {
+    transform: rotate(270deg);
+    top: 65%;
+    right: 20%;
+  }
+  100% {
+    transform: rotate(30deg);
+    top: 50%;
+    right: 10%;
+  }
+}
+footer .icon-down {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  animation: u019 15s infinite;
+}
+footer .icon-down i {
+  font-size: 50px;
+  font-weight: 200;
+  color: #1db096;
+  opacity: 1;
 }
 footer .boxes .footer-top {
   padding: 110px 0;

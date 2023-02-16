@@ -58,6 +58,7 @@ a {
 .p1 {
     font-size: 20px;
     color: #64555A;
+    opacity: 7;
 }
 
 .w-50 {
@@ -224,7 +225,27 @@ a {
     background-repeat: no-repeat;
     position: relative;
 
+    // @keyframes asadzade019{
+    //     0%{
+    //         top: 0;
+    //         left: 0;
+
+    //     }
+
+    // }
+
+    // .animation{
+    //     position: absolute;
+    //     top: 150px;
+    //     left: 150px;
+    //     width: 60px;
+    //     height: 60px;
+    //     background-color: #FD4766;
+
+    // }
+
     .container {
+       
         h1 {
             padding: 150px 0 0 0;
             font-size: 110px;
@@ -236,7 +257,7 @@ a {
             background: linear-gradient(99deg, rgba(17, 132, 175, 1) 32%, rgba(123, 104, 178, 1) 48%, rgba(217, 42, 181, 1) 62%);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            z-index: 5;
+            z-index: 6;
             position: relative;
 
         }
@@ -247,9 +268,9 @@ a {
             z-index: 6;
 
             .box {
-                width: 31%;
+                width: 30%;
                 text-align: center;
-                margin: 0 10px;
+                margin: 0 20px;
                 padding-bottom: 30px;
 
 
@@ -277,11 +298,21 @@ a {
 // ===========
 
 // section1 start
+
+
 #section1 {
     width: 100%;
     height: 90vh;
     margin-top: 200px;
     position: relative;
+@keyframes ulvi019{
+    0%{
+       top: 0;
+       left: 0;
+       transform: rotateY(360deg);
+    }
+   }
+
 
 .icon-up{
     position: fixed;
@@ -319,6 +350,8 @@ a {
                     border-radius: 50%;
                     background-color: #FD4766;
                     text-align: center;
+                    animation: ulvi019 2.5s infinite;
+                    position: relative;
                 }
 
                 h3 {
@@ -737,11 +770,53 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.199191194422104
 // ============
 // footer start
 
+
 footer {
+
+@keyframes u019{
+    0%{
+        transform: rotate(30deg);
+        top: 50%;
+        right: 10%;
+    }
+    25%{transform: rotate(90deg);
+        top: 60%;
+        right: 5%;
+    }
+    50%{transform: rotate(180deg);
+        top: 70%;
+        right: 10%;
+    }
+    75%{transform: rotate(270deg);
+        top: 65%;
+        right: 20%;
+    }
+    100%{transform: rotate(30deg);
+        top: 50%;
+        right: 10%;
+    }
+}
+
+    
     width: 100%;
     height: auto;
     background-color: black;
     color: #fff;
+    position: relative;
+    .icon-down{
+        position: absolute;
+        
+        top: 50%;
+        right: 10%;
+        animation: u019 15s infinite;
+
+        i{
+            font-size: 50px;
+            font-weight: 200;
+            color: #1db096;
+            opacity: 1;
+        }
+    }
 
     .boxes {
         .footer-top {
